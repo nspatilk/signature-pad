@@ -396,7 +396,7 @@ function SignaturePad (selector, options) {
     eventsBound = true
 
     // Closes open keyboards to free up space
-    $('input').blur();
+    $('input:focus').blur();
 
     if (typeof e.targetTouches !== 'undefined')
       touchable = true
